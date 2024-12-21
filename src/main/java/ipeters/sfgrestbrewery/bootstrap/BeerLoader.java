@@ -1,8 +1,8 @@
 package ipeters.sfgrestbrewery.bootstrap;
 
 
-import ipeters.sfgrestbrewery.domain.Beer;
 import ipeters.sfgrestbrewery.domain.BeerStyleEnum;
+import ipeters.sfgrestbrewery.entities.Beer;
 import ipeters.sfgrestbrewery.repositories.BeerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

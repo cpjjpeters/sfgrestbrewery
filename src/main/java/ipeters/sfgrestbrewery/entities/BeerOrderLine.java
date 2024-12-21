@@ -20,7 +20,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Version;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,13 +35,16 @@ import org.hibernate.type.SqlTypes;
 import java.sql.Timestamp;
 import java.util.UUID;
 
+/**
+ * Created by jt on 2019-01-26.
+ */
 @Getter
 @Setter
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 @Builder
-public class BeerOrder {
+public class BeerOrderLine {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -68,9 +70,6 @@ public class BeerOrder {
         return this.id == null;
     }
 
-    private String customerRef;
-
-    @ManyToOne
-    private Customer customer;
-
+    private Integer orderQuantity = 0;
+    private Integer quantityAllocated = 0;
 }

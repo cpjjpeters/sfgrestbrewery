@@ -1,8 +1,8 @@
 package ipeters.sfgrestbrewery.repositories;
 
 
-import ipeters.sfgrestbrewery.domain.Beer;
 import ipeters.sfgrestbrewery.domain.BeerStyleEnum;
+import ipeters.sfgrestbrewery.entities.Beer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
